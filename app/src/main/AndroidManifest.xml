@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tegarpenemuan.secondhandecomerce">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".EcommerceApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SecondHandEcomerce">
+        <activity
+            android:name=".ui.buyer6.Buyer6Activity"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name="com.tegarpenemuan.secondhandecomerce.ui.seller18.seller18"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".ui.profile.Profile"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name="com.tegarpenemuan.secondhandecomerce.ui.seller21.Seller21"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main" />
+        <activity
+            android:name=".ui.login.Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.register.Register"
+            android:exported="false" />
+    </application>
+
+</manifest>
